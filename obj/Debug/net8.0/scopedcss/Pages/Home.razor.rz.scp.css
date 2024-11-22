@@ -1,0 +1,51 @@
+body[b-n1apmi9by0] {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #eaec4d, #fe954e);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container[b-n1apmi9by0] {
+            background-color: #020251;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 7px 1px rgba(0, 0, 0, 0.2);
+            color: #ffe900;
+        }
+        .login-container h1[b-n1apmi9by0] {
+            font-size: 20px;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container input[b-n1apmi9by0] {
+            border-radius: 17px;
+        }
+        .btn-login[b-n1apmi9by0] {
+
+            background-color: #ffe900;
+            color: #020251;
+            font-weight: bold;
+            font-size: 22px;
+            box-shadow: 0 7px 2px rgba(0, 0, 0, 0.2);
+            max-width: 300px
+        }
+        .actions .btn:hover[b-n1apmi9by0] {
+            background-color: #ddca00;
+        }
+        .register[b-n1apmi9by0] {
+            font-size: 12px;
+            color: #17224d;
+            text-decoration: none;
+        }
+        .fondo-amarillo[b-n1apmi9by0]{
+            background-color: #ffe900;
+        }
+        .titulo[b-n1apmi9by0]{
+            font-family: fantasy
+        }
+        .letras[b-n1apmi9by0]{
+            font-family: sans-serif
+        }

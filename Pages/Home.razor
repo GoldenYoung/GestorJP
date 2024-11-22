@@ -1,0 +1,58 @@
+﻿@page "/"
+@layout HomeLayout
+<PageTitle>Iniciar de sesión</PageTitle>
+
+<div class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+    <div name="fila-principal" class="row col-12">
+        
+        <div name="logo-container" class="col-12 col-lg-5 col-md-12 col- offset-md-4 offset-1 offset-lg-0 d-flex">
+            <img src="img/logoGrande.png" class="img-fluid logo d-none d-lg-block" alt="Logo Jean Piaget" name="log-lg-o-mas" style="max-width: 700px;" id="logo-JeanPiaget">
+        </div>
+
+        <div name="formulario-container" class="container-fluid col-12 col-xl-5 col-lg-5 col-md-9 col-sm-9 d-flex login-container justify-content-center align-items-center ">
+            <div class="row col-12">
+                <div name="logo-con-letras" class="col-12 d-flex justify-content-center mb-3">
+                    <img src="img/logonombreafuera.png" alt="Logo Jean Piaget 2" class="img-fluid fondo-amarillo bg-opacity-50 px-4 py-1 rounded-pill d-none d-sm-block" style="max-width: 300px;">
+                    <img src="img/logonombreafuera.png" alt="Logo Jean Piaget 2" class="img-fluid fondo-amarillo bg-opacity-50 px-4 py-1 rounded-pill d-block d-sm-none" style="max-width: 240px;">
+                </div>
+
+                <h2 class="text-center mb-3 titulo">Inicie sesión en su cuenta</h2>
+
+
+                <EditForm Model="@loginModel" OnValidSubmit="@OnSubmit">
+                    <div class="">
+                        <div class="mb-2">
+                            <label for="email" class="letras mb-1">Correo electrónico:</label>
+                            <InputText id="email" name="email" class="form-control" @bind-Value="loginModel.Email" autocomplete="email" required />
+                        </div>
+                        <div class="">
+                            <label for="password" class="">Contraseña:</label>
+                            <InputText id="password" type="password" name="password" class="form-control" @bind-Value="loginModel.Password" autocomplete="current-password" required />
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn w-100 fw-bold mb-3 btn-login mt-4">
+                            INICIAR
+                        </button>
+                    </div>
+                </EditForm>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private LoginModel loginModel = new();
+
+    private void OnSubmit()
+    {
+        // Lógica de autenticación
+    }
+
+    public class LoginModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+}
